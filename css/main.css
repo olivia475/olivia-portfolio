@@ -1,0 +1,80 @@
+
+/* 
+TODO:
+- finish home page
+    - add images to the project cards
+    - create image hover states (ie swicth to detail shot)
+    - add imagery/smth interesting and descriptive of YOU to the home screen. Smth that takes up the whole home screen.
+    - add a brief description of who you are to home page.
+- create personalized cursor (draw one!)
+- add animation/visual smth when hover over name (in top left corner)
+    - idea: sketch circle around name to furthur highlight it
+        - if you figure that out, do the same thing for the LinkedIn logo in footer.
+- create about page
+    - have 'about' in nav bar permanently 700 font-weight
+    - include the following: 
+        - quick biography... WHO ARE YOU?
+        - education
+        - skills
+        - experience
+- create projects page
+    - have 'projects' in nav bar permanently 700 font-weight
+    - copy paste of home page, but with more projects
+- create pages for dif projects
+    - include the following:
+        - Title
+        - Image
+        - Overview
+        - Problem/Objective
+        - Interations & Solutions
+        - Takeaways
+*/
+
+h1 {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 2rem;
+}
+
+h2 {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+
+    transition-duration: 0.5s;
+}
+
+h2:hover, h1:focus {
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+h4 {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* ---------- nav bar buttons ---------- */
+a {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+    transition-duration: 0.5s;
+}
+
+a:hover, a:focus {
+    font-weight: 900;
+}

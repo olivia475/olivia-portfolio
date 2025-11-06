@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+/* ---------- nav bar ---------- */
+.nav-bar {
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    align-items: center;
+    margin-top: 2rem;
+    margin-inline: 2rem;
+    margin-bottom: 2rem;
+}
+
+nav {
+    text-align: right;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    line-height: 1.7;
+}
+
+/* ---------- projects gallery ----------- */
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+/* each card (image + text) */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  transition-duration: 0.5s;
+}
+
+.project-card:hover {
+    font-weight: 700;
+}
+
+.project-item {
+  background-color: #d3d3d3;
+  aspect-ratio: 1/1;
+}
+
+.project-text {
+  display: grid;
+  grid-template-columns: 1fr auto; 
+  font-family: 'Satoshi', sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+
+.text-left p, .text-right p {
+    margin: 0;
+}
+
+/* ---------- footer ---------- */
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 2rem;
+}
+
+.footer img {
+    margin-bottom: -2rem;
+}
+
+/* ---------- responsive settings ---------- */
+@media (width < 50rem) {
+    .project {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer h4 {
+        margin-bottom: 0;
+    }
+
+    .footer img {
+        margin-left: 1.6rem;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (width < 30rem) {
+    .project {
+        grid-template-columns: 1fr;
+    }
+}
