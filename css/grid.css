@@ -27,6 +27,67 @@ nav a {
     text-align: left;
 }
 
+/* ---------- hover photo gallery ---------- */
+.hover-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);  
+    gap: 0.2rem;
+    align-items: center;
+}
+
+.hover-gallery-grid > div {
+    position: relative;
+    aspect-ratio: 3 / 2;   
+    overflow: hidden;
+
+    display: flex;              
+    justify-content: center;    /* horizontal center */
+    align-items: center;        /* vertical center */
+    text-align: center; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 1;  
+    transition: opacity 1s ease-out;
+    z-index: 2;
+}
+
+.hover-gallery-grid div:hover .overlay {
+    opacity: 0;
+}
+
+.hover-gallery-grid h1 {
+    font-size: clamp(1rem, 2.2vw, 2rem);
+    font-weight: 500;
+}
+
+.hover-gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    display: block;
+}
+
+.img-origami-bump {
+    transform: translateY(12px);
+}
+
+.img-runner-bump {
+    transform: translateY(18px);
+}
+
+@media (width < 40rem) {
+    .hover-gallery-grid {
+        grid-template-columns: repeat(4, 1fr);  
+    }
+}
+
 /* ---------- projects gallery ----------- */
 .project {
     display: grid;
