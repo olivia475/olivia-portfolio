@@ -200,6 +200,17 @@ nav a {
 }
 
 
+/* ---------- about me text grid ---------- */
+.about-me-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-me-grid p {
+    margin-bottom: 0;
+}
+
+
 /* ---------- responsive settings ---------- */
 @media (width < 50rem) {
     .project {
@@ -231,6 +242,10 @@ nav a {
 
 @media (width < 40rem) {
     .context-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-me-grid {
         grid-template-columns: 1fr;
     }
 }
