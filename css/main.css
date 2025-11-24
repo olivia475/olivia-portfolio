@@ -31,8 +31,13 @@ h2 {
     font-family: 'Satoshi', sans-serif;
     font-size: 1.5rem;
     margin: 0;
+    margin-left: 2rem;
 
     transition-duration: 0.5s;
+}
+
+.nav-bar h2 {
+    margin: 0;
 }
 
 .left-align a {
