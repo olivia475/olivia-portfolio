@@ -216,33 +216,31 @@ nav a {
 
 /* ---------- the PEAK illustration grid ---------- */
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5rem;
 }
 
 .column {
-  flex: 50%;
-  max-width: 50%;
-  padding: 0 0.5rem;
+    flex: 50%;
+    max-width: 50%;
 }
 
 .column img {
-  margin-top: 0.5rem;
-  vertical-align: middle; 
-  width: 100%;
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%;
+    vertical-align: middle;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
+@media (max-width: 100rem) {
+    .column {
     flex: 50%;
     max-width: 50%;
-  }
+    }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media (max-width: 50rem) {
   .column {
     flex: 100%;
     max-width: 100%;
