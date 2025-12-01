@@ -231,6 +231,28 @@ nav a {
     padding: 0.5rem;
     width: 100%;
     vertical-align: middle;
+    transition: 0.5s ease;
+}
+
+.column a {
+    position: relative;
+    display: block;
+    background: white; 
+}
+
+.column a h3 {
+    position: absolute;
+    color: black;
+    opacity: 0;
+    margin: 1rem; 
+}
+
+.column a:hover img, .column a:focus img{
+    opacity: 20%;
+}
+
+.column a:hover h3, .column a:focus h3 {
+    opacity: 100%;
 }
 
 @media (max-width: 100rem) {
