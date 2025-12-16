@@ -83,6 +83,14 @@ p {
     max-width: 50rem; 
 }
 
+li {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1rem;
+    list-style-type: none;
+    text-align: left;
+    margin-left: 7rem;
+}
+
 /* ---------- nav buttons ---------- */
 a {
     font-family: 'Satoshi', sans-serif;
