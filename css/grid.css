@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+.two-fr-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 /* ---------- nav bar ---------- */
 .nav-bar {
     display: grid;
@@ -275,8 +280,13 @@ nav a {
     grid-template-columns: 1fr 1fr;
 }
 
+.about-me-grid h3 {
+    margin: 0rem 0rem 0rem 2rem;
+}
+
 .about-me-grid p {
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 /* ---------- footer ---------- */
@@ -343,6 +353,10 @@ nav a {
     }
 
     .about-me-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .two-fr-grid {
         grid-template-columns: 1fr;
     }
 
