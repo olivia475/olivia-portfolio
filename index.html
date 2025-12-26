@@ -16,92 +16,186 @@
 
 	<body>
 
-		<!------------ nav bar ------------>
+		<!-- Nav bar -->
 		<header>
 			<div class="nav-bar">
 				<h2 class="left-align">
-					<a href="index.html">olivia<br>blackmore</a>
+					<a href="index.html">olivia blackmore</a>
 				</h2>
 
-				<nav>
-					<a href="projects.html">projects</a>
+				<div style="text-align: right;">
 					<a href="about.html">about</a>
-				</nav>
+				</div>
+
+				<div style="text-align: right;">
+					<a href="#work">work</a>
+				</div>
+
+				<div style="text-align: right;">
+					<a href="playground.html">play</a>
+				</div>
+
+				<div style="text-align: right;">
+					<a href="images/OliviaBlackmore-Resume.pdf">resume</a>
+				</div>
 			</div>
 		</header>
 
-		<!-- Draggable card container -->
-		<!-- <section class="card-space">
-			<div class="card" id="draggableCard">
-				<div class="card-header">
-					<img src="images/your-image.jpg" alt="Postcard Image">
+		<hr class="full-width-line">
+		<!--  -->
+
+		<!-- Hero Section -->
+		<section>
+			<div class="home-hero-grid">
+				<div>
+					<h1>Welcome!</h1>
+					<h2 style="margin-top: 0;">My name is Olivia,</h2>
+					<p style="padding-top: 1.5rem; padding-left: 3.5rem;">Feel free to drag around the cards!</p>
+					<img 
+						src="images/wave.png"
+						alt="Waving Character"
+						width="auto"
+						height="200rem"
+						style="margin-left: 9.5rem; margin-top: 2.5rem;">
+				</div>
+
+				<div>
+					<img 
+						src="images/hood.png"
+						alt="Hooded Character"
+						width="auto"
+						height="200rem"
+						style="margin-left: 1.5rem; margin-top: 9rem;">
+
+					<h2 style="padding-top: 8.5rem; padding-bottom: 1rem; margin-right: 2rem;">I'm currently a second-year SIAT student at SFU, where I'm learning to blend illustration, UX, and motion into work that feels expressive and intentional.</h2>
 				</div>
 			</div>
-		</section> -->
+		</section>
+		<!--  -->
 
-		<!-- ---------- project gallery  -->
-		<section>
-			<h1>welcome to my<br>portfolio :p</h1>
-			<h3>here is what i've been up to...</h3>
-			<div class="project">
+		<!-- Draggable cards -->
+		<div class="card" id="draggableCard1">
+			<div class="card-header">
+				<img src="images/van-card.jpg" alt="Vancouver postcard design" style="pointer-events: none;">
+			</div>
+		</div>
 
-				<a href="thepeakfall2025.html">
-				<div class="project-card">
-					<div class="project-item">
-						<img src="images/peak illus/thepeak2025-card.jpg" alt="Gallery of illustrations">
-					</div>
-					<div class="project-text">
-						<div class="text-left">
-							<h3 class="title">The PEAK Fall 2025</h3>
-							<h4 class="date">Illustration Collection</h4>
-						</div>
-					</div>
-				</div>
+		<div class="card" id="draggableCard2">
+			<div class="card-header">
+				<img src="images/sunrise.jpeg" alt="Sunrise over bridge" style="pointer-events: none;">
+			</div>
+		</div>
+
+		<div class="card" id="draggableCard3">
+			<div class="card-header">
+				<img src="images/olivia-photo2.JPG" alt="Olivia in rainy Vancouver" style="pointer-events: none;">
+			</div>
+		</div>
+
+		<!-- Square card -->
+		<div class="card card-square" id="draggableCard4">
+			<div class="card-header">
+				<img src="images/OysterWorld.jpeg" alt="Sticker" style="pointer-events: none;">
+			</div>
+		</div>
+		<!-- -->
+
+		<!-- Selected projects -->
+		<section id="work">
+			<hr class="full-width-line">
+			
+			<h3>Here is what i've been up to...</h3>
+
+			<!-- Project 1 -->
+			<div class="project-grid">
+				<a href="origami-fold.html">
+					<img src="images/GHHK/origami.png" alt="Gallery of illustrations">
 				</a>
 				
-				<a href="origami-fold.html">
-				<div class="project-card">
-					<div class="project-item">
-						<img src="images/GHHK/origami-fold-cover.png" alt="Flattened Box with Floral Design">
-					</div>
-					<div class="project-text">
-						<div class="text-left">
-							<h3 class="title">Grand Hyatt HK Origami Fold</h3>
-							<h4 class="date">Graphic Design</h4>
+				<div class="text-grid">
+					<div>
+						<h2>Grand Hyatt HK Origami Fold</h2>
+						<h3>Graphic Design</h3>
+						<p>Visual design for TEALEAVES origami fold packaging, celebrating the Grand Hyatt Hong Kong's 35th anniversary. </p>
+
+						<div style="margin-top: 2rem; text-decoration: underline;">
+							<a href="origami-fold.html">Learn more</a>
 						</div>
 					</div>
-				</div>
-				</a>
 
-				<a href="hooligang.html">
-				<div class="project-card">
-					<div class="project-item">
-						<img src="images/hooligang/hooligang-cover.png" alt="'Hooligang' screen capture">
-					</div>
-						<div class="project-text">
-						<div class="text-left">
-							<h3 class="title">'HOOLIGANG'</h3>
-							<h4 class="date">Motion Graphic</h4>
-						</div>
-					</div>
+					<h3 style="text-align: right">2025</h3>
 				</div>
-				</a>
-
 			</div>
-		</section> 
-		<!-- ---------- -->
+			<!--  -->
 
-		<!------------ footer ------------>
+			<hr class="full-width-line">
+
+			<!-- Project 2 -->
+			<div class="project-grid">
+				<a href="thepeakfall2025.html">
+					<img src="images/peak-hero.png" alt="Gallery of illustrations">
+				</a>
+				
+				<div class="text-grid">
+					<div>
+						<h2>The PEAK</h2>
+						<h3>Illustration Collection</h3>
+						<p>A collection of original illustrations drawn for SFU's The Peak newspaper throughout the Fall 2025 semester.</p>
+
+						<div style="margin-top: 2rem; text-decoration: underline;">
+							<a href="thepeakfall2025.html">Learn more</a>
+						</div>
+					</div>
+
+					<h3 style="text-align: right">2025</h3>
+				</div>
+			</div>
+			<!--  -->
+
+			<hr class="full-width-line">
+
+			<!-- Project 3 -->
+			<div class="project-grid">
+				<a href="hooligang.html">
+					<img src="images/hooligang/hooligang-cover.png" alt="'Hooligang' screen capture">
+				</a>
+				
+				<div class="text-grid">
+					<div>
+						<h2>'HOOLIGANG'</h2>
+						<h3>Motion Graphic</h3>
+						<p>A kinetic typography video to the song 'HOOLIGANG' by Joey Valence & Brae.</p>
+
+						<div style="margin-top: 2rem; text-decoration: underline;">
+							<a href="hooligang.html">Learn more</a>
+						</div>
+					</div>
+
+					<h3 style="text-align: right">2024</h3>
+				</div>
+			</div>
+			<!--  -->
+
+		</section>
+		<!--  -->
+
+		<hr class="full-width-line">
+
+		<!-- Footer -->
 		<section>
-			<h3><br>contact</h3>
+			<h3>contact</h3>
 			<div class="footer">
-				<h4>(+1) 604 - 369 - 7239</h4>
 				<h4>olivia_blackmore@sfu.ca</h4>
-				<a href="https://www.linkedin.com/in/olivia-blackmore-1a490b230/">
-					<img src="images/linkedin-icon.jpg" alt="LinkedIn Logo" height="40" width="auto">
+				<a href="https://www.linkedin.com/in/olivia-blackmore-1a490b230/"
+				   style="font-size: 1rem;
+						  font-weight: 400;
+						  margin-left: 2rem;
+						  color: rgb(181, 179, 168)">
+					LinkedIn
 				</a>
 			</div>
 		</section>
+		<!--  -->
 
 		<script src="js/draggable.js"></script>
 	</body>

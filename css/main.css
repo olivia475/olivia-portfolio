@@ -10,12 +10,21 @@ TODO:
         - if you figure that out, do the same thing for the LinkedIn logo in footer.
 */
 
+body {
+    background-color: rgb(21, 19, 23);
+    color: rgb(181, 179, 168);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {
     font-family: 'Satoshi', sans-serif;
     font-size: 3rem;
     font-weight: 900;
     margin: 0;
-    padding: 2rem;
+    padding: 0.5rem 2rem 0rem 2rem;
 }
 
 /* ----- 'olivia blackmore' nav bar item ----- */
@@ -34,7 +43,7 @@ h2 {
 
 .left-align a {
   text-decoration: none;
-  color: black;
+  color: rgb(181, 179, 168);
   font-weight: 700; 
 }
 
@@ -91,9 +100,15 @@ li {
     margin-left: 7rem;
 }
 
+img { 
+    border-radius: 0.5rem; 
+
+}
+
 /* ---------- nav buttons ---------- */
 a {
     font-family: 'Satoshi', sans-serif;
+    color: rgb(181, 179, 168);
     font-size: 1.3rem;
     font-weight: 500;
     text-decoration: none;
@@ -108,13 +123,13 @@ a:hover, a:focus {
 /* ---------- line ---------- */
 .full-width-line {
     border: none;
-    border-top: 1px solid black;
+    border-top: 1px solid rgb(181, 179, 168);
     margin: 2rem;
 }
 
 .small-width-line {
     border: none;
-    border-top: 1px solid black;
+    border-top: 1px solid rgb(181, 179, 168);
     margin: 2rem;
     margin-right: 4rem;
 }
@@ -176,19 +191,13 @@ a:hover, a:focus {
     aspect-ratio: 6/2;
 }
 
-/* Draggable Card Space */
-.card-space {
-    min-height: 80vh;
-    position: relative;
-    margin: 2rem;
-}
+/* ---------- Draggable Card Styles ---------- */
 
-/* Draggable Card Styles */
 .card {
     position: absolute;
-    width: 600px;
+    width: 31rem;  
     background: white;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     cursor: move;
     user-select: none;
@@ -204,13 +213,13 @@ a:hover, a:focus {
 
 .card-header {
     background: white;
-    border-radius: 8px 8px 0 0;
+    border-radius: 0.5rem;
     overflow: hidden;
 }
 
 .card-header img {
     width: 100%;
-    height: 400px;
+    height: 20.5rem;  
     object-fit: cover;
     display: block;
     margin: 0;
@@ -228,3 +237,53 @@ a:hover, a:focus {
     margin-left: 0;
     margin-right: 0;
 }
+
+@media (width < 70rem) {
+    .card {
+        width: 26rem;
+    }
+    
+    .card-header img {
+        height: 17.5rem; 
+    }
+}
+
+@media (width < 62.5rem) {
+    .card[id="draggableCard2"] {
+        display: none;
+    }
+}
+
+/* Square card */
+.card-square {
+    width: 200px;  
+}
+
+.card-square .card-header img {
+    height: 200px;  
+}
+
+/* ---------- Center single images ---------- */
+img[alt="Flattened Box with Floral Design"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img[alt="Final Product"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (width < 50rem) {
+    .left-align a {
+        font-size: 0; 
+    }
+    
+    .left-align a::before {
+        content: "ob";
+        font-size: 1.5rem; 
+    }
+}
+
