@@ -31,6 +31,12 @@ const positionSets = {
         { left: '2rem', top: '20rem' },
         { left: '6rem', top: '19rem' },
         { left: '7rem', top: '35rem' },
+    ],
+    iphone: [ 
+        { left: '2.5rem', top: '40rem' },
+        { left: '2rem', top: '20rem' }, //discard
+        { left: '2.5rem', top: '17rem' },
+        { left: '7rem', top: '33rem' }, 
     ]
 };
 
@@ -41,7 +47,8 @@ function getBreakpoint() {
     if (width > 1120) return 'largermed';
     if (width > 1000) return 'largemed';
     if (width > 800) return 'medium';
-    return 'small';
+    if (width > 550) return 'small';
+    return 'iphone';
 }
 
 // Function to set card positions based on breakpoint
