@@ -155,6 +155,26 @@ nav a {
     border-radius: 0.5rem;
 }
 
+.font-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.font-grid img {
+    width: 70%;
+    height: auto;
+    border-radius: 0.5rem;
+    background-color: rgb(181, 179, 168);
+    margin: auto;
+    justify-self: center;
+}
+
 /* ---------- the PEAK illustration grid ---------- */
 .row {
     display: flex;
@@ -312,6 +332,10 @@ nav a {
     }
 
     .versions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .font-grid {
         grid-template-columns: 1fr;
     }
 }

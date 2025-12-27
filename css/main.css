@@ -278,7 +278,6 @@ a:hover, a:focus {
     }
 }
 
-
 /* Square card */
 .card-square {
     width: 200px;  
@@ -300,6 +299,7 @@ img[alt="Final Product"] {
     margin-left: auto;
     margin-right: auto;
 }
+/* ---------- */
 
 @media (width < 50rem) {
     .left-align a {
