@@ -71,6 +71,10 @@ h4 {
     margin-bottom: 2rem;
 }
 
+.context-grid h4 {
+    color: rgb(128, 157, 49);
+}
+
 .padding-left {
     margin-left: 2rem;
 }
