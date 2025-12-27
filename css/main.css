@@ -254,6 +254,31 @@ a:hover, a:focus {
     }
 }
 
+@media (width < 34.375rem) {
+    .bio-text {
+        padding-top: 3rem !important; 
+    }
+}
+
+@media (width < 30rem) {
+    .card {
+        width: 20rem;
+    }
+
+    .card-header img {
+        height: 13.5rem; 
+    }
+
+    .char-image {
+        display: none;
+    }
+
+    .bio-text {
+        padding-top: 30rem !important; 
+    }
+}
+
+
 /* Square card */
 .card-square {
     width: 200px;  
@@ -286,4 +311,3 @@ img[alt="Final Product"] {
         font-size: 1.5rem; 
     }
 }
-

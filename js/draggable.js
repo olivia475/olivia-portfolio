@@ -32,11 +32,17 @@ const positionSets = {
         { left: '6rem', top: '19rem' },
         { left: '7rem', top: '35rem' },
     ],
-    iphone: [ 
+    smaller: [ 
         { left: '2.5rem', top: '40rem' },
         { left: '2rem', top: '20rem' }, //discard
         { left: '2.5rem', top: '17rem' },
         { left: '7rem', top: '33rem' }, 
+    ],
+    iphone: [ 
+        { left: '2.5rem', top: '35rem' },
+        { left: '2rem', top: '20rem' }, //discard
+        { left: '2.5rem', top: '17rem' },
+        { left: '9rem', top: '29rem' }, 
     ]
 };
 
@@ -48,6 +54,7 @@ function getBreakpoint() {
     if (width > 1000) return 'largemed';
     if (width > 800) return 'medium';
     if (width > 550) return 'small';
+    if (width > 480) return 'smaller';
     return 'iphone';
 }
 
