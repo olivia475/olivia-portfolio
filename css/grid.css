@@ -364,4 +364,9 @@ nav a {
     .play-grid {
         grid-template-columns: 1fr;
     }
+
+    .play-grid img {
+        width: 100%;
+        height: auto;
+    }
 }
