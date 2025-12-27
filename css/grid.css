@@ -335,6 +335,12 @@ nav a {
         grid-template-columns: 1fr;
     }
 
+    .versions-grid img,
+    .image-grid img {
+        width: 100%;
+        height: 80vw;
+    }
+
     .font-grid {
         grid-template-columns: 1fr;
     }
@@ -361,6 +367,12 @@ nav a {
         height: 15rem;
     }
 
+    .versions-grid img,
+    .image-grid img {
+        width: 100%;
+        height: 70vw;
+    }
+
     .play-grid {
         grid-template-columns: 1fr;
     }
@@ -370,3 +382,21 @@ nav a {
         height: auto;
     }
 }
+
+@media (width < 30rem) {
+    .versions-grid img,
+    .image-grid img {
+        width: 100%;
+        height: 65vw;
+    }
+}
+
+@media (width < 23rem) {
+    .versions-grid img,
+    .image-grid img {
+        width: 100%;
+        height: 60vw;
+    }
+}
+
+
