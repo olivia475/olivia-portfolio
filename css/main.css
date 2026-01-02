@@ -97,6 +97,10 @@ p {
     max-width: 50rem; 
 }
 
+.play-grid p {
+    margin: 0 !important;
+}
+
 li {
     font-family: 'Satoshi', sans-serif;
     font-size: 1rem;

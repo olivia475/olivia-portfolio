@@ -260,10 +260,6 @@ nav a {
     padding-top: 1rem;
 }
 
-.play-grid p {
-    margin: 0rem;
-}
-
 /* ---------- footer ---------- */
 .footer {
     display: grid;
