@@ -345,6 +345,17 @@ nav a {
     .font-grid {
         grid-template-columns: 1fr;
     }
+
+    .play-grid {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .play-grid img {
+        width: 100%;
+        height: auto;
+        text-align: left;
+    }
 }
 
 @media (width < 40rem) {
@@ -372,15 +383,6 @@ nav a {
     .image-grid img {
         width: 100%;
         height: 70vw;
-    }
-
-    .play-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .play-grid img {
-        width: 100%;
-        height: auto;
     }
 }
 
