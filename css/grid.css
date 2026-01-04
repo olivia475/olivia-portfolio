@@ -93,6 +93,15 @@ nav a {
     padding: 0;
 }
 
+.title-grid h2 {
+    padding-top: 1rem;
+}
+
+.title-grid img {
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
 /* ---------- PROJECT context grid (purpose, tools, etc) ---------- */
 .context-grid {
     display: grid;
