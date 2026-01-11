@@ -9,9 +9,25 @@
 
 .two-fr-grid img {
     width: 100%;
-    height: 400px;  /* Adjust this value to make squares bigger/smaller */
+    height: 400px; 
     object-fit: cover;
     border-radius: 0.5rem;
+}
+
+.three-fr-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+    gap: 1rem;
+}
+
+.three-fr-grid > div {
+    background-color: rgb(40, 38, 42);
+    border-radius: 0.5rem;
+    padding: 1rem;
 }
 
 /* ---------- nav bar ---------- */
@@ -105,7 +121,7 @@ nav a {
 /* ---------- PROJECT context grid (purpose, tools, etc) ---------- */
 .context-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
     margin-top: 1rem;
     margin-left: 2rem;
@@ -290,6 +306,10 @@ nav a {
 
 @media (width < 60rem) {
     .two-fr-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .three-fr-grid {
         grid-template-columns: 1fr;
     }
 }
