@@ -143,12 +143,14 @@ nav a {
 
 .large-image-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: white;
     border-radius: 0.5rem;
-    padding-top: 1rem; 
+    padding-top: 2rem; 
     margin-left: 2rem;
     margin-right: 4rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
     flex-direction: column;
     justify-items: center;
 }
@@ -198,6 +200,22 @@ nav a {
     background-color: rgb(181, 179, 168);
     margin: auto;
     justify-self: center;
+}
+
+/* ---------- hooligang storyboard sketches ---------- */
+.sketch-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.one-image {
+    display: grid;
+    grid-column: 1fr;
+    gap: 1rem;
+    margin: 2rem;
+    justify-items: center;
 }
 
 /* ---------- the PEAK illustration grid ---------- */
@@ -312,6 +330,14 @@ nav a {
     .three-fr-grid {
         grid-template-columns: 1fr;
     }
+
+    .sketch-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .one-image {
+        width: 100%;
+    }
 }
 
 @media (width < 50rem) {
@@ -355,10 +381,6 @@ nav a {
 
     .xl-image-grid {
         grid-template-columns: 1fr 1fr;
-    }
-
-    .large-image-grid {
-        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .versions-grid {
@@ -412,6 +434,10 @@ nav a {
     .image-grid img {
         width: 100%;
         height: 70vw;
+    }
+
+    .sketch-grid {
+        grid-template-columns: 1fr;
     }
 }
 
