@@ -74,6 +74,22 @@ nav a {
     display: block;
 }
 
+.project-grid a:has(img) {
+    display: block;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.50s ease, transform 0.50s ease;
+}
+
+.project-grid a:has(img):hover {
+    box-shadow: 0 3px 10px rgb(181, 179, 168);
+    transform: scale(1.01);
+}
+
+.project-grid a:has(img):focus {
+    box-shadow: 0 3px 10px rgb(181, 179, 168);
+    transform: scale(1.01);
+}
+
 .project-grid h2 {
     margin: 0;
 }
@@ -244,6 +260,10 @@ nav a {
     background: rgb(21, 19, 23); 
     border-radius: 0.5rem;
     padding: 0.5rem;
+
+    display: block;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.50s ease, transform 0.50s ease;
 }
 
 .column a h3 {
@@ -254,7 +274,10 @@ nav a {
 }
 
 .column a:hover img, .column a:focus img{
-    opacity: 20%;
+    /* opacity: 20%; */
+
+    box-shadow: 0 3px 10px rgb(181, 179, 168);
+    transform: scale(1.01);
 }
 
 .column a:hover h3, .column a:focus h3 {
